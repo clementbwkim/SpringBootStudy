@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.copycoding.demo.dao.LoginDao">
+
+	<select id="selectListEnterpriseMember" parameterType="EnterpriseMemberVO" resultType="EnterpriseMemberVO">
+			<!-- selectListEnterpriseMember -->
+			SELECT 
+		        ENTRPRSMBERID
+		       ,ENTRPRSSECODE 
+		       ,BIZRNO 
+		       ,JURIRNO 
+		       ,COMNAME
+		       ,ZIP 
+		       ,ADDRESS 
+			FROM COMTNENTRPRSMBER
+		   
+	</select>
+</mapper>
